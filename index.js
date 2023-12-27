@@ -725,3 +725,11 @@ window.addEventListener("touchend", (event) => {
     keys.d.pressed = false;
     keys.a.pressed = false;
 }, false);
+
+window.addEventListener("touchstart", tapHandler);
+
+function tapHandler(event) {
+    if (event && event.touches.length > 1){
+        event.preventDefault();
+    }
+}

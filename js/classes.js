@@ -198,7 +198,7 @@ class Fighter extends Sprite{
         this.velocity.x = 0 ;
         this.switchSprite('run');
         if (!this.dead && !player.dead) {
-            if (this.position.y === 200) {
+            if (this.position.y === percentWindow) {
                 if (this.position.x > player.position.x + distantion){
                     if ( this.position.x > player.position.x) {
                         this.runTime = true;
